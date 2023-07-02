@@ -10,3 +10,47 @@ html {
 h1 {
 	text-align: center;
 }
+
+
+/*Justin code:
+
+html {
+html,body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
+
+.navBar {
+  display: flex;
+	text-align: center;
+  background-color: black;
+  padding: 2em;
+  justify-content: space-evenly;
+}
+
+.navBar *{
+  padding: 10px 10px 10px 10px;
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 3%;
+}
+
+.navBar a:hover{
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Montserrat';
+	text-align: center;
+}
+
+@media screen and (max-width: 867px){
+
+}
+*/
