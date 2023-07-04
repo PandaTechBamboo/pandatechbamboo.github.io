@@ -16,7 +16,7 @@ nav {
 }
 
 nav .logo{
-  width: 150px;
+  width: 6vw;
 }
 
 .nav-links{
@@ -49,6 +49,10 @@ nav .fa{
 
 .social-media a{
   padding: 10px;
+}
+
+.social-media img{
+  width: 30px;
 }
 
 h1 {
@@ -84,5 +88,8 @@ h1 {
     margin: 10px;
     font-size: 25px;
     cursor: pointer;
+  }
+  nav .logo{
+    width: 60px;
   }
 }
