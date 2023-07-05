@@ -3,11 +3,11 @@ var navLinks = document.getElementById("navLinks")
 window.addEventListener("resize", fixMenu);
 
 function showMenu(){
-    navLinks.style.right = "0";
+    navLinks.style.top = "0";
 }
 
 function hideMenu(){
-    navLinks.style.right = "-400px";
+    navLinks.style.top = "-4000px";
 }
 
 function fixMenu(){
