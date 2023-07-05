@@ -2,12 +2,20 @@ var navLinks = document.getElementById("navLinks")
 
 window.addEventListener("resize", fixMenu);
 
+var ignore = document.querySelector("nav")
+window.addEventListener("click",function(event){
+    if(event.target != ignore && event.target.parentNode != ignore){
+        hideMenu();
+    }
+})
+
+
 function showMenu(){
-    navLinks.style.top = "0";
+    navLinks.style.right = "0";
 }
 
 function hideMenu(){
-    navLinks.style.top = "-4000px";
+    navLinks.style.right = "-500px";
 }
 
 function fixMenu(){

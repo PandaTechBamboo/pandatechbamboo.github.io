@@ -67,25 +67,22 @@ h1 {
   }
   .nav-links ul li{
     display: block;
-    width: 50%;
+    padding: 0;
   }
   .nav-links ul li a{
+    font-size: medium;
     padding: 0;
   }
   .nav-links{
     position: absolute;
     background-color: black;
     height: 100vh;
-    width: 100%;
-    top: -1000px;
-    right: 0;
+    width: 200px;
+    top: 0;
+    right: -500px;
     z-index: 2;
-    transition: 1.5s;
+    transition: .5s;
     text-align: left;
-  }
-
-  .nav-links .fa{
-    text-align: right;
   }
 
   nav .fa{
@@ -96,5 +93,9 @@ h1 {
   }
   nav .logo{
     width: 60px;
+  }
+
+  nav .social-media a img{
+    width: 30px;
   }
 }
