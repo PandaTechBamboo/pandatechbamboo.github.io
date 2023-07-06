@@ -10,7 +10,7 @@ html,body {
 nav {
   display: flex;
   align-items: center;
-  background-color: rgb(4, 7, 59);
+  background-color: #04073B;
   padding: 1%;
   justify-content: space-evenly;
 }
@@ -27,8 +27,8 @@ nav .logo{
   list-style: none;
   display: inline-block;
   position: relative;
-  padding: 0px 50px;
-  font-size: 2em;
+  padding: 0px 35px;
+  font-size: 1.5em;
 }
 
 .nav-links ul li a{
@@ -71,8 +71,9 @@ h1 {
   }
   .nav-links ul li a{
     font-size: medium;
-    padding: 0;
+    padding: 3px;
   }
+  
   .nav-links{
     position: absolute;
     background-color: black;
@@ -91,6 +92,7 @@ h1 {
     font-size: 25px;
     cursor: pointer;
   }
+  
   nav .logo{
     width: 60px;
   }
