@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PandaTech</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!--Sets the font-->
+  <base href = "MainPage.html" target = "_blank">
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<div class="navBar">
+		<a href="About.html" target="_blank">About</a>
+		<a href="" target="_blank">Terms & Conditions</a>
+		<a href="" target="_blank">Pricing</a>
+    		<a href="" target="_blank">Saas</a>
+    		<a href="" target="_blank">Social Media</a>
+    		<a href="" target="_blank">Join Us</a>
+	</div>
+
+	<form>
+		<label>Extended Search</label>
+		<input list = "Pages" id = "WebPages">
+		<datalist id = "Pages">
+			<option value = "About">
+			<option value = "Conditions">
+		</datalist>
+		<button id = "buttonProp" onclick = "datalistcall()" type = "button">Search</button>
+	</form>
+
+	
+	<h1>PandaTech</h1>
+  <script src="script.js"></script>
+
+  <script type="text/javascript">
+	function datalistcall() {
+		var o1 = document.getElementById("carsInput").value;
+		document.getElementById("output").innerHTML = "You select " + o1 + " option";
+	}
+</script>
+
+  <style>
+	html {
+		height: 100%;
+		width: 100%;
+	  }
+	  
+	  .navBar {
+		  text-align: center;
+	  }
+	  
+	  h1 {
+		  text-align: center;
+	  }
+	  
+	  
+	  /*Justin code:
+	  
+	  html {
+	  html,body {
+		height: 100%;
+		width: 100%;
+		margin:0;
+	  }
+	  
+	  
+	  .navBar {
+		display: flex;
+		  text-align: center;
+		background-color: black;
+		padding: 2em;
+		justify-content: space-evenly;
+	  }
+	  
+	  .navBar *{
+		padding: 10px 10px 10px 10px;
+		font-family: 'Montserrat';
+		font-size: 1.5em;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+		border-radius: 3%;
+	  }
+	  
+	  .navBar a:hover{
+		color: black;
+		background-color: white;
+	  }
+	  
+	  h1 {
+		font-family: 'Montserrat';
+		  text-align: center;
+	  }
+	  
+	  @media screen and (max-width: 867px){
+	  
+	  }
+	  */
+	  
+  </style>
+
+</body>
+</html>
