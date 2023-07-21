@@ -12,28 +12,47 @@
 
 <body>
 	<!-- navigation bar -->
-	<div class="navBar">
-		<a href="About.html" target="_blank">About</a>
-		<a href="" target="_blank">Terms & Conditions</a>
-		<a href="" target="_blank">Pricing</a>
-    		<a href="" target="_blank">Saas</a>
-    		<a href="" target="_blank">Social Media</a>
-    		<a href="" target="_blank">Join Us</a>
+	<div class="genNavBar">
+		<div class = "navBarEntity"><a href = "About.html" target = "_blank">About</a></div>
+		<div class = "navBarEntity"><a href="" target="_blank">Terms & Conditions</a></div>
+		<div class = "navBarEntity"><a href="" target="_blank">Pricing</a></div>
+		<div class = "navBarEntity"><a href="" target="_blank">Saas</a></div>
+		<div class = "navBarEntity"><a href="" target="_blank">Social Media</a></div>
+		<div class = "navBarEntity"><a href="" target="_blank">Join Us</a></div>
+
+
+		<div class = "extendedSearch">
+			<form>
+				<label>Extended Search</label>
+				<input list = "Pages" id = "WebPages">
+				<datalist id = "Pages">
+					<option value = "About">
+					<option value = "Conditions">
+				</datalist>
+				<button id = "buttonProp" onclick = "datalistcall()" type = "button">Search</button>
+			</form>
+		</div>
 	</div>
 
-	<form>
-		<label>Extended Search</label>
-		<input list = "Pages" id = "WebPages">
-		<datalist id = "Pages">
-			<option value = "About">
-			<option value = "Conditions">
-		</datalist>
-		<button id = "buttonProp" onclick = "datalistcall()" type = "button">Search</button>
-	</form>
-
 	
-	<h1>PandaTech</h1>
-  <script src="script.js"></script>
+	<h1 id = "PandaTech">PandaTech</h1>
+
+	<img src="images/logov1.png" alt="Panda Face" style="width:auto;" class = "logo">
+
+
+
+
+
+	<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
 
   <script type="text/javascript">
 	function datalistcall() {
@@ -48,13 +67,46 @@
 		width: 100%;
 	  }
 	  
-	  .navBar {
-		  text-align: center;
+	  .genNavBar {
+		text-align: center;
+		border: 5px outset darkgreen;
+		background-color: lightgreen;  
+		height: 40px;  
+	  }
+
+	  .navBarEntity {
+		float: left;
+		border: 5px outset black;
+		text-align: center;
+		width: 10%;
+		margin: 7px;
+	  }
+
+	  .extendedSearch {
+		float: left;
+		border: 5px outset black;
+		text-align: center;
+		width: 20%;
+		margin: 6px;
 	  }
 	  
-	  h1 {
+	  #PandaTech {
 		  text-align: center;
 	  }
+
+	  #WebPages {
+		background-color: darkgreen;
+		color: white;
+		margin-left: 2 px;
+	  }
+	  
+	  .logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	  }
+
 	  
 	  
 	  /*Justin code:
