@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, shrink-to-fit=no">
   <title>PandaTech</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!--Sets the font-->
   <base href = "MainPage.html" target = "_blank">
+
+  <script src="https://kit.fontawesome.com/18f70a6290.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
 	<!-- navigation bar -->
+	<!--
 	<div class="genNavBar">
 		<div class = "navBarEntity"><a href = "About.html" target = "_blank">About</a></div>
 		<div class = "navBarEntity"><a href="" target="_blank">Terms & Conditions</a></div>
@@ -33,126 +37,42 @@
 			</form>
 		</div>
 	</div>
+	-->
+
+	<nav>
+		<a href="" target="_blank"><img src="images/logo.png" class="logo"></a>
+		<div class="nav-links" id="navLinks">
+		  <ul class="js-being-wack">
+			<li><a href="" target="_blank">About</a></li>
+			<li><a href="" target="_blank">Terms</a></li>
+			<li><a href="" target="_blank">Buy Panda</a></li>
+			<li><a href="" target="_blank">Saas</a></li>
+			<li><a href="" target="_blank">Join Us</a></li>
+		  </ul>
+		</div>
+		<div class="social-media">
+		  <a href="https://www.instagram.com/pandatechinc" target="_blank"><img src="images/instagram.png"></a>
+		  <a href="" target="_blank"><img src="images/twitter.png"></a>
+		  <a href="" target="_blank"><img src="images/linkedin.png"></a>
+		</div>
+		<i class="fa fa-bars fa-2xl" id="burger-icon" style="color: white;font-family: 'fontawesome';" onclick="showMenu()"></i>
+	  </nav>
+	  
+	  <script src="script.js"></script>
 
 	
 	<h1 id = "PandaTech">PandaTech</h1>
 
 	<img src="images/logov1.png" alt="Panda Face" style="width:auto;" class = "logo">
 
-
-
-
-
-	<script src="script.js"></script>
-
-
-
-
-
-
-
-
-
-
-  <script type="text/javascript">
-	function datalistcall() {
-		var o1 = document.getElementById("carsInput").value;
-		document.getElementById("output").innerHTML = "You select " + o1 + " option";
-	}
-</script>
-
-  <style>
-	html {
-		height: 100%;
-		width: 100%;
-	  }
-	  
-	  .genNavBar {
-		text-align: center;
-		border: 5px outset darkgreen;
-		background-color: lightgreen;  
-		height: 40px;  
-	  }
-
-	  .navBarEntity {
-		float: left;
-		border: 5px outset black;
-		text-align: center;
-		width: 10%;
-		margin: 7px;
-	  }
-
-	  .extendedSearch {
-		float: left;
-		border: 5px outset black;
-		text-align: center;
-		width: 20%;
-		margin: 6px;
-	  }
-	  
-	  #PandaTech {
-		  text-align: center;
-	  }
-
-	  #WebPages {
-		background-color: darkgreen;
-		color: white;
-		margin-left: 2 px;
-	  }
-	  
-	  .logo {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	  }
-
-	  
-	  
-	  /*Justin code:
-	  
-	  html {
-	  html,body {
-		height: 100%;
-		width: 100%;
-		margin:0;
-	  }
-	  
-	  
-	  .navBar {
-		display: flex;
-		  text-align: center;
-		background-color: black;
-		padding: 2em;
-		justify-content: space-evenly;
-	  }
-	  
-	  .navBar *{
-		padding: 10px 10px 10px 10px;
-		font-family: 'Montserrat';
-		font-size: 1.5em;
-		font-weight: bold;
-		color: white;
-		text-decoration: none;
-		border-radius: 3%;
-	  }
-	  
-	  .navBar a:hover{
-		color: black;
-		background-color: white;
-	  }
-	  
-	  h1 {
-		font-family: 'Montserrat';
-		  text-align: center;
-	  }
-	  
-	  @media screen and (max-width: 867px){
-	  
-	  }
-	  */
-	  
-  </style>
+	<!--https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp-->
+	
+	<div id="scrollmenu">
+		<a href="">Home</a>
+		<a href="">News</a>
+		<a href="">Contact</a>
+		<a href="">About</a>
+	</div>
 
 </body>
 </html>
