@@ -33,3 +33,4 @@ function datalistcall() {
     var o1 = document.getElementById("carsInput").value;
     document.getElementById("output").innerHTML = "You select " + o1 + " option";
 }
+

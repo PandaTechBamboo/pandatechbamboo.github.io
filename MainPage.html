@@ -13,8 +13,70 @@
 </head>
 
 <body>
+	<nav>
+		<a href="" target="_blank"><img src="images/logov2.png" class="logo"></a>
+		<div class="nav-links" id="navLinks">
+		  <ul class="js-being-wack">
+			<li><a href="About.html" target="_blank">About</a></li>
+			<li><a href="" target="_blank">Terms</a></li>
+			<li><a href="" target="_blank">Buy Panda</a></li>
+			<li><a href="" target="_blank">Saas</a></li>
+			<li><a href="" target="_blank">Join Us</a></li>
+		  </ul>
+		</div>
+		<div class="social-media">
+		  <a href="https://www.instagram.com/pandatechinc" target="_blank"><img src="images/instagram.png"></a>
+		  <a href="" target="_blank"><img src="images/twitter.png"></a>
+		  <a href="" target="_blank"><img src="images/linkedin.png"></a>
+		</div>
+		<i class="fa fa-bars fa-2xl" id="burger-icon" style="color: white;font-family: 'fontawesome';" onclick="showMenu()"></i>
+	  </nav>
+	  
+	  <script src="script.js"></script>
 
-	<!-- navigation bar -->
+	
+	<h1 id = "PandaTech" styler = "color: black">PandaTech</h1>
+	
+	<p id="PandaTechLogoSupport" style="font-weight: bold;">
+	</p>
+	
+	<script>
+		var support = document.getElementById('PandaTechLogoSupport');
+		var logo = document.getElementById('PandaTech');
+		
+			logo.setFont = function (font) {
+			var size = this.offsetWidth,
+			font_size = size * font;
+			this.style.fontSize = font_size + '%';
+			return this
+		};
+		
+		logo.setFont(0.50);
+		
+		window.onresize = function () {
+			logo.setFont(0.50);
+		}
+	</script>
+	
+	<div style="height: 200px" >
+		<img src="images/logov2short.png" alt="Panda Face"
+		style="max-height: 300%; max-width: 100%" class = "logo">
+	</div>
+
+	<!--https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp-->
+	
+	<div id="scrollmenu">
+
+		<a href="">Panda Keyboards</a>
+		<a href="OrigamiPanda.html" target="_blank"><img src="images/PinkPanda.jpg" style = "width:100px"></a>
+		<a href="">Panda Crochet</a>
+		<a href="">Panda Sunglasses</a>
+	</div>
+
+</body>
+</html>
+
+<!-- navigation bar -->
 	<!--
 	<div class="genNavBar">
 		<div class = "navBarEntity"><a href = "About.html" target = "_blank">About</a></div>
@@ -38,42 +100,3 @@
 		</div>
 	</div>
 	-->
-
-	<nav>
-		<a href="" target="_blank"><img src="images/logov2.png" class="logo"></a>
-		<div class="nav-links" id="navLinks">
-		  <ul class="js-being-wack">
-			<li><a href="" target="_blank">About</a></li>
-			<li><a href="" target="_blank">Terms</a></li>
-			<li><a href="" target="_blank">Buy Panda</a></li>
-			<li><a href="" target="_blank">Saas</a></li>
-			<li><a href="" target="_blank">Join Us</a></li>
-		  </ul>
-		</div>
-		<div class="social-media">
-		  <a href="https://www.instagram.com/pandatechinc" target="_blank"><img src="images/instagram.png"></a>
-		  <a href="" target="_blank"><img src="images/twitter.png"></a>
-		  <a href="" target="_blank"><img src="images/linkedin.png"></a>
-		</div>
-		<i class="fa fa-bars fa-2xl" id="burger-icon" style="color: white;font-family: 'fontawesome';" onclick="showMenu()"></i>
-	  </nav>
-	  
-	  <script src="script.js"></script>
-
-	
-	<h1 id = "PandaTech">PandaTech</h1>
-
-	<img src="images/logov2short.png" alt="Panda Face" style="width:50%;" style = "height: 20%" class = "logo" >
-
-	<!--https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp-->
-	
-	<div id="scrollmenu">
-
-		<a href="">Panda Keyboards</a>
-		<a href="OrigamiPanda.html" target="_blank"><img src="images/PinkPanda.jpg" style = "width:100px"></a>
-		<a href="">Panda Crochet</a>
-		<a href="">Panda Sunglasses</a>
-	</div>
-
-</body>
-</html>
