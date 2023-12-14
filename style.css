@@ -146,10 +146,11 @@ html,body {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
     margin-top: 50px;
-    height: 200px;
+    height: 100px;
+    color:white;
+    padding-bottom:20px;
   }
   
   #scrollmenu a {
