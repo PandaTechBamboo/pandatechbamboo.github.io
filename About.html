@@ -5,9 +5,20 @@
         <meta name = "viewport" content = "width=device-width">
         <title>About PandaTech</title>
         <base href = "MainPage.html" target = "_blank">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script> 
+            $(function(){
+            $("#navigation-bar").load("navigation/navigation.html"); 
+            });
+        </script> 
+
     </head>
 
     <body>
+        <nav id = "navigation-bar"></nav>
+
         <h1>About PandaTech</h1>
         <hr>
         <h2>Who We Are</h2>

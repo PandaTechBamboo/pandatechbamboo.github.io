@@ -9,13 +9,15 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!--Sets the font-->
 	<base href = "MainPage.html" target = "_blank">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-
+	<script defer src="script.js"></script>
 	<script src="https://kit.fontawesome.com/18f70a6290.js" crossorigin="anonymous"></script>
+	<script src = "navigation/navigation.js"></script>
+	<link href="navigation/navigation.css" rel = "stylesheet" type="text/css">
 </head>
 
 <body>
 	<nav>
-		<a href="index.html" target="_self"><img src="images/panda-logos/panda.png" class="logo" style = "height:50px;width:40px"></a>
+		<a href="index.html" target="_self"><img src="images/panda-logos/transparent-bamboo-shot-white-text.png" class="logo" style = "height:50px;width:40px"></a>
 		<div class="nav-links" id="navLinks">
 			<ul class="js-being-wack">
 				<li><a href="empty.html" target="_blank">About</a></li>
@@ -33,44 +35,19 @@
 		<i class="fa fa-bars fa-2xl" id="burger-icon" style="color: white;font-family: 'fontawesome';" onclick="showMenu()"></i>
 	</nav>
 	  
-	<script src="script.js"></script>
 	
-	<script>
-		var support = document.getElementById('PandaTechLogoSupport');
-		var logo = document.getElementById('PandaTech');
-		
-			logo.setFont = function (font) {
-			var size = this.offsetWidth,
-			font_size = size * font;
-			this.style.fontSize = font_size + '%';
-			return this
-		};
-		
-		logo.setFont(0.50);
-		
-		window.onresize = function () {
-			logo.setFont(0.50);
-		}
-
-		
-	</script>
 	
-	<div style="height: 225x;" >
-		<img src="images/panda-logos/landscape-bamboo.png" alt="landscape name"
-		style="max-height: 300%; max-width: 100%" class = "logo">
-	</div>
+	<img src="images/panda-logos/landscape-bamboo.png" alt="landscape name"
+		id = "bamboo-title" class = "logo">
 
-	<div>
-		<a href = "https://docs.google.com/forms/d/1djDUgMHhvYePCf9mk_IgydNk6POFGaGpxTDOqvsnyGo/edit" target = "_self">
-			<img src = "images/panda-logos/panda.png" alt ="panda" style = "margin-left:43%;width:14%;margin-top:5px">
+	<div id = "main-panda-holder" >
+		<a href = "https://forms.gle/kLhTuJEr7ZwMrhKz5" target = "_self">
+			<img id = "main-panda" src = "images/panda-logos/panda.png" alt ="panda">
 		</a>
 	</div>
-
-	<!--https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp-->
 	
-	<div id="scrollmenu">
-		<h1 style = "font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Decentralizing Flows of Information</h1>
-	</div>
+
+	<h1 id = "bottom-text-holder">Decentralizing Flows of Information</h1>
 
 </body>
 </html>
