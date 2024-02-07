@@ -1,0 +1,56 @@
+#group-pictures-holder {
+    float:left;
+    border-style:solid;
+    width: 45%;
+    margin-left: 2.5%;
+    min-width: 400px;
+}
+
+#about-us {
+    margin-top: 10px;
+    font:3.2vw;
+    text-align: center;
+    height: 3.2vw;
+}
+
+#first-page-right-side-holder {
+    float:right;
+    border-style:solid;
+    width: 45%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+    min-width: 400px;
+}
+
+.profile {
+    width: 45%;
+    height: 300px;
+}
+
+.profile .profile-left-side {
+    float: left;
+}
+
+.profile .person-picture {
+    max-height: 300px;
+    max-width: 200px;
+    aspect-ratio:calc(200 / 300);
+    object-fit: cover;
+    border-style: solid;
+}
+
+.profile .person-title { 
+    height: 20px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.profile .profile-right-side {
+
+}
+
+.profile-right-side .person-decription {
+    height: 300px;
+    background-color: red;
+}
