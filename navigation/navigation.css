@@ -12,7 +12,7 @@ nav {
   
   .nav-links{
     flex: 1;
-      text-align: center;
+    text-align: center;
   }
   .nav-links ul li{
     list-style: none;
@@ -147,3 +147,7 @@ nav {
     background-color: #777;
   }
   
+  #burger-icon{
+    color: white; 
+    font-family: 'fontawesome'
+  }

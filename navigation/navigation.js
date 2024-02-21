@@ -50,4 +50,3 @@ logo.setFont(0.50);
 window.onresize = function () {
     logo.setFont(0.50);
 }
-

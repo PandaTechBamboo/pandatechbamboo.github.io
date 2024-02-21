@@ -10,10 +10,10 @@ html,body {
 
 #bottom-text-holder {
   background-color: #333;
+  color: white;
   /*overflow: auto;
   white-space: nowrap;*/
   height: auto;
-  color:white;
   max-height: 50px;
   position:fixed;
   bottom: 0px;
@@ -50,4 +50,9 @@ html,body {
   display: table;
   position: relative;
   margin: auto;
+}
+
+.logo {
+  height: 50px; 
+  width: 40px
 }

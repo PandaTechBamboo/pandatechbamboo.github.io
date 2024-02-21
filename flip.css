@@ -1,0 +1,45 @@
+
+.image-container {
+  perspective: 1000px; /* This creates a 3D space for the flip effect */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 400px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+}
+
+.flippable-image {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+}
+
+.quote {
+  transform: rotateY(180deg);
+}
+.image-wrapper:hover {
+  transform: rotateY(180deg);
+}
+
+.image-wrapper:hover .caption {
+  opacity: 1;
+}
