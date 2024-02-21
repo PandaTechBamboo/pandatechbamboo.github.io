@@ -6,4 +6,54 @@ html,body {
     font-family:'Montserrat';
     overflow-x: hidden;
   }
+
+
+
+main {
+    background-image: url(../../images/bamboo-background-1.png);
+    /* Set background size and properties */
+    background-size: cover; /* You can use 'contain' or other values depending on your needs */
+    background-repeat: no-repeat;
+    background-position: center center; /* You can adjust the position as needed */
+
+    /* Set other styles if necessary */
+    margin-top: 0;
+    margin: 0; /* Remove default 
+    margin */
+    padding: 0; /* Remove default padding */
+    height: calc(100% - 75px);
+}
   
+
+#main-header {
+    text-align: center;
+    margin-top: 0;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", sans-serif;
+
+}
+
+.section-header {
+    text-align: center;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.section-text {
+    width: 400px;
+    display: flex;
+    margin: auto;
+    padding-top: 0;
+    justify-content: center;
+    font-family: "Balsamiq Sans", sans-serif;
+    text-align: center;
+}
+
+#mission-statement{
+    font-style: italic;
+
+}
+
+#the-problem{
+    width:800px;
+    text-align:left;
+}

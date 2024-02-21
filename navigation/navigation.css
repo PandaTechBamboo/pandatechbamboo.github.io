@@ -47,8 +47,8 @@ nav {
   }
   
   h1 {
-    font-family: 'Montserrat';
-      text-align: center;
+    font-family: "Balsamiq Sans", sans-serif;
+    text-align: center;
     padding: 1em
   }
   @media screen and (max-width: 1612px) {
@@ -150,4 +150,8 @@ nav {
   #burger-icon{
     color: white; 
     font-family: 'fontawesome'
+  }
+
+  .js-being-wack {
+    font-family: "Balsamiq Sans", sans-serif;
   }
