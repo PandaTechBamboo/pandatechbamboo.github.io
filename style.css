@@ -61,9 +61,5 @@ body {
   display: table;
   position: relative;
   margin: auto;
-}
-
-.logo {
-  height: 50px;
-  width: 40px;
+  filter: drop-shadow(10px 5px 5px black);
 }
