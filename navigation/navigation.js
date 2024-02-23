@@ -20,6 +20,20 @@ window.addEventListener("click",function(event){
     }
 })
 
+/*Recently added */
+ignore.addEventListener("touchstart", function (event) {
+    event.preventDefault(); // Prevent the default touch behavior
+    if (
+        event.target !== navLinks &&
+        event.target.parentNode !== navLinks &&
+        event.target !== ignore &&
+        event.target.parentNode !== ignore &&
+        event.target.parentNode !== links
+    ) {
+        hideMenu();
+    }
+});
+
 
 function showMenu(){
     navLinks.style.right = "0";
