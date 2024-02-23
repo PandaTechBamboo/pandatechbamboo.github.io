@@ -1,12 +1,18 @@
-html,body {
+html,
+body {
   height: 100%;
   width: 100%;
-  margin:0;
+  margin: 0;
   padding: 0;
-  font-family:'Montserrat';
+  font-family: "Montserrat";
   overflow-x: hidden;
-}
 
+  /*
+  background-image: url(images/index-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;*/
+}
 
 #bottom-text-holder {
   background-color: #333;
@@ -15,11 +21,15 @@ html,body {
   white-space: nowrap;*/
   height: auto;
   max-height: 50px;
-  position:fixed;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   font-size: calc(3.2vh + 0.5vw);
   margin-bottom: 0px;
+
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #bamboo-title {
@@ -27,8 +37,12 @@ html,body {
   top: 0;
   width: 100%;
   margin-top: 75px;
+  max-height: 225px;
+  max-width: 765px;
+  /*
   max-height: 300px;
   max-width: 1020px;
+  */
 
   display: table;
   position: relative;
@@ -36,23 +50,20 @@ html,body {
 }
 
 #main-panda-holder {
-  margin-top:5px;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  margin-bottom: 120px;
   display: flex;
   justify-content: center;
 }
 
-#main-panda {
-  width:250px;
+#main-panda-holder .image-container .image-wrapper img {
+  width: 250px;
   display: table;
   position: relative;
   margin: auto;
 }
 
 .logo {
-  height: 50px; 
-  width: 40px
+  height: 50px;
+  width: 40px;
 }
