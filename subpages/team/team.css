@@ -79,3 +79,17 @@ body {
 .profile h2 {
   text-align: center;
 }
+
+@media (max-width: 1200px) {
+  .grid {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    margin-top: 400px;
+    grid-template-columns: 1fr; /* Change to a single column */
+    gap: 20px; /* Adjust the gap as needed */
+  }
+}
