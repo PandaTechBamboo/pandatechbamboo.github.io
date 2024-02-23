@@ -1,19 +1,21 @@
-
 .image-container {
   perspective: 1000px; /* This creates a 3D space for the flip effect */
+  border-radius: 20px;
 }
 
 .image-wrapper {
   position: relative;
-  width: 400px; /* Set your desired width */
+  width: 350px; /* Set your desired width */
   height: auto; /* Maintain aspect ratio */
   transform-style: preserve-3d;
   transition: transform 1.5s;
+  border-radius: 20px;
 }
 
 .flippable-image {
   width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .caption {
@@ -30,14 +32,16 @@
   font-size: 18px;
   opacity: 0;
   transition: opacity 0.5s;
-
+  border-radius: 20px;
 }
 
 .quote {
   transform: rotateY(180deg);
+  border-radius: 20px;
 }
 .image-wrapper:hover {
   transform: rotateY(180deg);
+  border-radius: 20px;
 }
 
 .image-wrapper:hover .caption {
