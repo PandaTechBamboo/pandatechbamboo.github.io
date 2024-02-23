@@ -25,13 +25,16 @@ main {
 #main-header {
   text-align: center;
   margin-top: 0;
-  font-weight: bolder;
   font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 800;
+  font-style: bold;
 }
 
 .section-header {
   text-align: center;
   font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: bold;
 }
 
 .section-text {

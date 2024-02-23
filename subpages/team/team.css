@@ -34,11 +34,11 @@
 }
 
 main {
-  margin-top: -75px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 .grid {
