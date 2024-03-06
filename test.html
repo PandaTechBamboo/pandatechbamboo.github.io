@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive flip image</title>
+    <style type="text/css">
+      body {
+        background: linear-gradient(to left, tomato, orange);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        width: 90%;
+        margin: 40px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+
+      .front img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+
+      .container1 {
+        position: relative;
+      }
+
+      .front h2 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+      }
+
+      .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        color: white;
+        padding: 15px;
+        transform: perspective(600px) rotateY(180deg);
+        transition: transform 0.5s linear 0s;
+        backface-visibility: hidden;
+        border-radius: 10px;
+      }
+
+      .front {
+        color: white;
+        transform: perspective(600px) rotateY(0deg);
+        transition: transform 0.5s linear 0s;
+      }
+
+      .container1:hover > .front {
+        transform: perspective(600px) rotateY(-180deg);
+        cursor: pointer;
+      }
+
+      .container1:hover > .back {
+        transform: perspective(600px) rotateY(0deg);
+        cursor: pointer;
+      }
+
+      @media (max-width: 800px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container1">
+        <div class="front">
+          <img src="img/a.jpg" />
+          <h2>Lemon</h2>
+        </div>
+        <div class="back">
+          <h2>Lemon</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+            nisi.
+          </p>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="front">
+          <img src="img/b.jpg" />
+          <h2>Burger</h2>
+        </div>
+        <div class="back">
+          <h2>Burger</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+            nisi.
+          </p>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="front">
+          <img src="img/c.jpg" />
+          <h2>Lychee</h2>
+        </div>
+        <div class="back">
+          <h2>Lychee</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+            nisi.
+          </p>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="front">
+          <img src="img/d.jpg" />
+          <h2>Ice cream</h2>
+        </div>
+        <div class="back">
+          <h2>Ice cream</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+            nisi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
