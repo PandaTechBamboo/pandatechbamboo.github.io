@@ -41,10 +41,12 @@
 
 .container:hover > .front {
   transform: perspective(600px) rotateY(-180deg);
+  transition: transform 1s;
   cursor: pointer;
 }
 
 .container:hover > .back {
   transform: perspective(600px) rotateY(0deg);
+  transition: transform 1s;
   cursor: pointer;
 }

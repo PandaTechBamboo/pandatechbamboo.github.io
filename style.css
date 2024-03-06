@@ -57,8 +57,8 @@ body {
   justify-content: center;
 }
 
-#main-panda-holder .image-container .image-wrapper img {
-  width: 230px;
+#main-panda-holder .container .front img {
+  height: 300px;
   display: table;
   position: relative;
   margin: auto;
