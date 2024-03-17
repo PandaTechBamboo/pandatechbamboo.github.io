@@ -12,6 +12,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 350px);
   gap: 150px;
+  position: relative;
 }
 
 body {

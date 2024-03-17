@@ -20,7 +20,6 @@ body {
   /*overflow: auto;
   white-space: nowrap;*/
   height: auto;
-  max-height: 50px;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -51,16 +50,30 @@ body {
 }
 
 #main-panda-holder {
-  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  border-style: solid;
 }
 
 #main-panda-holder .container .front img {
-  height: 250px;
+  height: 40vh;
   display: table;
   position: relative;
   margin: auto;
   filter: drop-shadow(10px 5px 5px black);
+}
+
+@media screen and (max-width: 500px){
+  #main-panda-holder {
+    margin-top: 100px;
+  }
+
+  #main-panda-holder .container .front img {
+    height: 350px;
+  }
+
+  #bottom-text-holder {
+    font-size: x-large;
+  }
 }

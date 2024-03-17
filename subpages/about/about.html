@@ -26,7 +26,7 @@
     />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="navigation/navigation.js"></script>
     <script
       src="https://kit.fontawesome.com/18f70a6290.js"
       crossorigin="anonymous"
@@ -39,31 +39,14 @@
 
   <body>
     <nav>
-      <a href="index.html" target="_self">
-        <img
-          src="images/panda-logos/transparent-bamboo-shot-white-text.png"
-          class="logo"
-        />
-      </a>
-
-      <div class="nav-links" id="navLinks">
-        <ul class="js-being-wack">
-          <li>
-            <a href="index.html" target="_self" class="page-link">Home</a>
-          </li>
-          <li>
-            <a href="subpages/about/about.html" target="_self" class="page-link"
-              >About (Current)</a
-            >
-          </li>
-          <li>
-            <a href="subpages/team/team.html" target="_self" class="page-link"
-              >Team</a
-            >
-          </li>
-        </ul>
+      <div id="brand-link">
+        <a href="" target="_self">
+          <img
+            src="images/panda-logos/transparent-bamboo-shot-white-text.png"
+          />
+        </a>
       </div>
-
+      
       <div class="social-media">
         <a href="https://www.instagram.com/ptbamboo/" target="_blank">
           <img src="images/nav-bar/instagram.png" />
@@ -84,7 +67,14 @@
         </a>
       </div>
 
-      <i class="fa fa-bars fa-2xl" id="burger-icon" onclick="showMenu()"></i>
+      <img src ="images/nav-bar/nav-burger-transparent.png" id="burger-icon" onclick="toggleMenu()">
+      
+
+      <div id="navLinks">
+        <a href="index.html" target="_self">Home</a></li><br><br>
+        <a href="subpages/about/about.html" target="_self">About (Current)</a></li><br><br>
+        <a href="subpages/team/team.html" target="_self">Team</a></li><br><br>
+      </div>
     </nav>
 
     <main>
@@ -111,6 +101,8 @@
         A collaborative calendar that event planners can add to spontaneously
         and without approval processes or overhead
       </h3>
+
+      
     </main>
   </body>
 </html>
