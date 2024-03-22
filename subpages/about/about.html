@@ -39,42 +39,51 @@
 
   <body>
     <nav>
-      <div id="brand-link">
-        <a href="" target="_self">
-          <img
-            src="images/panda-logos/transparent-bamboo-shot-white-text.png"
-          />
-        </a>
+      <a href="index.html" target="_self">
+        <img
+          src="images/panda-logos/transparent-bamboo-shot-white-text.png"
+          class="logo"
+        />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <ul class="js-being-wack">
+          <li><a href="" target="_self">Home</a></li>
+          <li>
+            <a href="subpages/about/about.html" target="_self"
+              >About (Current)</a
+            >
+          </li>
+          <li><a href="subpages/team/team.html" target="_self">Team</a></li>
+        </ul>
       </div>
-      
+
       <div class="social-media">
         <a href="https://www.instagram.com/ptbamboo/" target="_blank">
-          <img src="images/nav-bar/instagram.png" />
+          <img src="images/nav-bar/instagram.png" style="width: 55px" />
         </a>
 
         <a
           href="https://x.com/brennen80610/status/1735129151135154380?s=20"
           target="_blank"
         >
-          <img src="images/nav-bar/twitter.png" />
+          <img src="images/nav-bar/twitter.png" style="width: 55px" />
         </a>
 
         <a
           href="https://www.linkedin.com/company/99064215/admin/feed/posts/?feedType=following"
           target="_blank"
         >
-          <img src="images/nav-bar/linkedin.png" />
+          <img src="images/nav-bar/linkedin.png" style="width: 55px" />
         </a>
       </div>
 
-      <img src ="images/nav-bar/nav-burger-transparent.png" id="burger-icon" onclick="toggleMenu()">
-      
-
-      <div id="navLinks">
-        <a href="index.html" target="_self">Home</a></li><br><br>
-        <a href="subpages/about/about.html" target="_self">About (Current)</a></li><br><br>
-        <a href="subpages/team/team.html" target="_self">Team</a></li><br><br>
-      </div>
+      <img
+        class="fa fa-bars fa-2xl"
+        id="burger-icon"
+        onclick="showMenu()"
+        src="images/nav-bar/nav-burger-transparent.png"
+      />
     </nav>
 
     <main>
@@ -89,8 +98,8 @@
       <h2 class="section-header">The Problem</h2>
       <h3 class="section-text" id="the-problem">
         Students want to go to events but:<br /><br />
-        1. Every organization uses different outlets<br />
-        2. It is hard to keep up<br />
+        1. Every organization uses different outlets, so<br />
+        2. It is hard to keep up, so<br />
         3. Students don't go to events
       </h3>
 
@@ -101,8 +110,6 @@
         A collaborative calendar that event planners can add to spontaneously
         and without approval processes or overhead
       </h3>
-
-      
     </main>
   </body>
 </html>
